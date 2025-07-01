@@ -7,6 +7,10 @@ Original file is located at
     https://colab.research.google.com/drive/1qohLmexivUzt7FdoOAf7UTKil_CTVqRi
 """
 
+
+
+
+
 #INICIO DEL JUEGO: Numero de jugadores
 while True:
   try:
@@ -38,3 +42,39 @@ print(carcel)
     #if dado1=5 or dado2=5
       #movimientos = 1
       #break
+
+
+if dado2 == dado1:
+  
+
+
+
+#determina los colores de los jugadores
+
+
+lista_de_judadores = [rojo,azul,amarillo,verde]
+
+if jugadores == 3:
+
+ lista_de_judadores.remove(verde)
+
+elif jugadores == 2: 
+
+ lista_de_judadores.remove(amarillo) 
+
+
+#turnos(funciona infinitamente pero funcionan  falta ver como hacer que solo se active cada cierto  tiempo 
+# o despues de cierta accion si es haci se le puede quitar el while)
+
+
+#def turnos(lista_de_judadores)
+
+ # while len(lista_de_judadores) > 1:
+
+  #3 primero = lista_de_judadores.pop(0)   
+  # lista_de_judadores.append(primero)     
+   # print(lista_de_judadores)     
+    
+ # print(lista_de_judadores)
+
+#turnos(lista_de_judadores)
