@@ -8,14 +8,14 @@ Original file is located at
 """
 
 
-
+contador_de_turnos = 0
 
 
 #INICIO DEL JUEGO: Numero de jugadores
 while True:
   try:
-    jugadores = int(input("¿Cuántos jugadores habrán? (Seleccione de 2-4)"))
-    if jugadores >= 2 and jugadores <= 4:
+    jugadores1 = int(input("¿Cuántos jugadores habrán? (Seleccione de 2-4)"))
+    if jugadores1 >= 2 and jugadores <= 4:
       break
     else:
       print("Debe seleccionar entre 2 y 4 jugadores")
@@ -25,14 +25,6 @@ while True:
 fichas=4
 
 #DADOS
-import random
-dado1 = random.randint(1,6)
-dado2 = random.randint(1,6)
-print("Dado 1:", dado1)
-print("Dado 2:", dado2)
-
-for i in range(jugadores):
-  carcel=[1,2,3,4]
 
 print(carcel)
 #MOVIMIENTOS
@@ -44,37 +36,62 @@ print(carcel)
       #break
 
 
-if dado2 == dado1:
-  
 
 
 
 #determina los colores de los jugadores
 
 
-lista_de_judadores = [rojo,azul,amarillo,verde]
+if jugadores1 == 3:
 
-if jugadores == 3:
+ del lista_de_judadores["jugadores"][3]
 
- lista_de_judadores.remove(verde)
+elif jugadores1 == 2: 
 
-elif jugadores == 2: 
-
- lista_de_judadores.remove(amarillo) 
+ del lista_de_judadores["jugadores"][2]
+ 
+ del lista_de_judadores["jugadores"][3]
 
 
 #turnos(funciona infinitamente pero funcionan  falta ver como hacer que solo se active cada cierto  tiempo 
 # o despues de cierta accion si es haci se le puede quitar el while)
 
 
-#def turnos(lista_de_judadores)
 
- # while len(lista_de_judadores) > 1:
 
-  #3 primero = lista_de_judadores.pop(0)   
-  # lista_de_judadores.append(primero)     
-   # print(lista_de_judadores)     
-    
- # print(lista_de_judadores)
+def turnos(lista_de_jugadores):
 
-#turnos(lista_de_judadores)
+  global contador_de_turnos
+
+  t = True
+  while t:
+
+
+   import random
+
+    dado1 = random.randint(1,6) 
+    dado2 = random.randint(1,6)
+    print("Dado 1:", dado1)
+    print("Dado 2:", dado2)
+
+    if dado2 == dado1:
+      print("puedes volver a tirar los dados")
+
+    elif contador_de_turnos == 10:
+
+      print("fin del juego")
+      t = False
+
+    else:
+
+       primero = lista_de_jugadores.pop(0)   
+       lista_de_jugadores.append(primero)     
+        
+
+    contador_de_turnos = contador_de_turnos + 1
+   
+
+    print (lista_de_jugadores) 
+
+
+turnos(lista_de_jugadores)
