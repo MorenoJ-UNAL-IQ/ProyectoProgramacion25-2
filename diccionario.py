@@ -112,6 +112,9 @@ Casillas = {
 "66":(50, 350),
 "67":(20, 350),
 "68":(20, 450),
+}
+
+Carceles ={
 "rcarcel1" :(75, 675),
 "rcarcel2" :(75, 725),
 "rcarcel3" :(125, 675),
@@ -128,14 +131,37 @@ Casillas = {
 "amcarcel2" :(575,675),
 "amcarcel3" :(625,725),
 "amcarcel4" :(625,675),
-# "1": (20, 550),
-# "2": (50, 550),
-# "3": (80, 550),
-# "4": (110, 550),
-# "5": (140, 550),
-# "6": (170, 550),
-# "7": (200, 550),
-# "8": (230, 550),
+}
+
+Legadasrojas= {
+"llegada_roja1": (20, 450),
+"llegada_roja2": (50, 450),
+"llegada_roja3": (80, 450),
+"llegada_roja4": (110, 450),
+"llegada_roja5": (140, 450),
+"llegada_roja6": (170, 450),
+"llegada_roja7": (200, 450),
+"llegada_roja8": (230, 450),
+}
+
+llegadasazules = {
+"llegada azul1":(350, 320),
+"llegada azul2":(350, 290),
+"llegada azul3":(350, 260),
+"llegada azul4":(350, 230),
+"llegada azul5":(350, 200),
+"llegada azul6":(350, 170),
+"llegada azul7":(350, 140),
+"llegada azul8":(350, 110),
+}
+
+# Legadasverdes = {
 
 
+
+Salidas_por_color = {
+    "rojo": "5",
+    "amarillo": "22",
+    "verde": "39",
+    "azul": "56"
 }
