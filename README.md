@@ -1,6 +1,6 @@
 # DESCRIPCIÓN PROYECTO
 
-## ** ¿Cómo usar? **
+## ¿Cómo usar? 
 Descargar la carpeta **parques**, en esta se encontrarán dos archivos:
 
   **1** principal.py
